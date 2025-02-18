@@ -7,8 +7,8 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-content">
         <img src={ReactPic} alt="Aldwin Ray Aguilo" className="hero-image" />
-        <h1>Hi, I'm Aldwin Ray Aguilo</h1>
-        <p>Front-End Developer</p>
+        <h1>Hello, I'm Aldwin Ray Aguilo</h1>
+        <p>"An Aspiring Front-End Developer"</p>
         <Link to="/about">
           <button>Learn More About Me</button>
         </Link>
