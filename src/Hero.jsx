@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactPic from "../src/ReactPic.jpg"; // Corrected path
+import ReactPic from "../src/ReactPic.jpg"; 
 
 const Hero = () => {
   return (
