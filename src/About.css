@@ -1,46 +1,99 @@
 .about {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background: url("Sunset.jpg")no-repeat center center/cover;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     width: 100vw;
-    filter: brightness(70%); 
-    text-align: left; 
-    overflow: hidden;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 30px; 
-    max-width: 800px;
+    background: url("Sunset.jpg") no-repeat center center/cover;
+    text-align: left;
+    overflow-y: auto;
     padding: 20px;
 }
 
+.about::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    z-index: 2;
+    color: white;
+}
+
+.about::-webkit-scrollbar {
+    width: 8px;
+}
+
+.about::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.about::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
 
 .about-image {
+    margin-top: 50px;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
     flex: 1;
+    text-align: center;
+    padding: 10px;
 }
 
 .about h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    color: #ffad60;
     margin-bottom: 10px;
 }
 
 .about p {
     font-size: 1.2rem;
-    color: white;
     max-width: 600px;
+    color: #d3d3d3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-container span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
