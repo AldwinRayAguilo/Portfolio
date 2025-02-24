@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: center; /* Ensures even spacing */
+    justify-content: center; 
     align-items: center;
     background: #222;
     padding: 15px 0;
@@ -17,32 +15,31 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw; /* Ensure it spans the full viewport width */
-    z-index: 1000; /* Make sure it's above other content */
+    width: 100vw; 
+    z-index: 1000; 
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.2rem; /* Ensure better readability */
+    font-size: 1.2rem; 
 }
 
 .navbar a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    background: url("Cloud.jpg") no-repeat center center/cover; /* Ensure full coverage */
+    width: 100vw; 
+    height: 100vh; 
+    background: url("Cloud.jpg") no-repeat center center/cover; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 60px; /* Space for fixed navbar */
+    padding-top: 60px; 
     overflow: hidden;
 }
 
@@ -53,14 +50,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darken the image for better contrast */
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero-content {
     position: relative;
     color: white;
     z-index: 1;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .hero h1 {
@@ -88,16 +85,14 @@
     background: #0056b3;
 }
 
-/* Hero Image */
 .hero-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px; /* Space between image and text */
+    margin-bottom: 15px; 
 }
 
-/* About Page */
 .about {
     display: flex;
     flex-direction: column;
