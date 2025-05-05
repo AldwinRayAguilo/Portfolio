@@ -75,4 +75,6 @@
   max-width: 600px;
 }
 
-
+@import './Hero.css';
+@import './components/About.css';
+@import './components/Project.css';

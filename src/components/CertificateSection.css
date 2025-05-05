@@ -1,0 +1,127 @@
+.certificate-section {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.certificate-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffad60;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+    color: #ffad60;
+    font-weight: bold;
+    text-align: center;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.certificate-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    max-height: 60vh;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.view-pdf-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffad60;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.view-pdf-button:hover {
+    background-color: #ffc88b;
+}
+
+.certificate-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .zoom-in {
+    animation: zoomIn 0.3s ease-out;
+  }
+  
