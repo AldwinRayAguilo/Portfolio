@@ -20,12 +20,13 @@ const Contact = () => {
           </p>
         </div>
 
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <form className="contact-form" action="https://formspree.io/f/mwpoovbg" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
       </div>
     </section>
   );
