@@ -1,22 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Hero from "../src/Hero"; 
-import About from "../src/About";
-import "../src/Hero.css";
-import "../src/About.css";
+import { Routes, Route } from "react-router-dom";
+import Hero from "./Hero";
+import "./Hero.css";
+import About from "./components/About";
+import "./components/About.css";
+import Projects from "./components/Projects";
+import "./components/Projects.css";
+import Blog from "./components/Blog";
+import Navbar from "./components/Navbar"; 
+import "./components/Navbar.css";
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <Router>
-      <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+    <>
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
